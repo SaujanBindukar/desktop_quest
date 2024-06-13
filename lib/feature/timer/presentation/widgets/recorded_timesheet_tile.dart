@@ -50,9 +50,9 @@ class RecordedTimeSheetTile extends StatelessWidget {
                 ),
                 child: Image.memory(
                   timeSheet.image!,
-                  height: 100,
-                  width: 100,
-                  fit: BoxFit.cover,
+                  height: 120,
+                  width: 150,
+                  fit: BoxFit.fill,
                 ),
               ),
             ],

@@ -53,12 +53,12 @@ class _TimerScreenState extends State<TimerScreen> {
             }
           },
           builder: (context, state) {
-            return Row(
+            return const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                TimerWidget(state: state),
-                const Expanded(
+                TimerWidget(),
+                Expanded(
                   flex: 1,
                   child: RecordedData(),
                 ),

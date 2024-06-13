@@ -1,16 +1,15 @@
 import 'package:desktop_quest/core/extensions/duration_extension.dart';
 import 'package:desktop_quest/feature/timer/application/cubit/timer_cubit.dart';
-import 'package:desktop_quest/feature/timer/infrastructure/timesheet.dart';
 import 'package:desktop_quest/feature/timer/presentation/widgets/headshot.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TimerWidget extends StatelessWidget {
-  const TimerWidget({super.key, required this.state});
-  final CurrentTimeSheet state;
+  const TimerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final state = context.watch<TimerCubit>().state;
     return Expanded(
       flex: 1,
       child: Container(
