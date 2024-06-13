@@ -10,7 +10,7 @@ class CurrentTimeSheet with _$CurrentTimeSheet {
   const factory CurrentTimeSheet({
     Timer? timer,
     @Default(Duration(seconds: 0)) Duration duration,
-    @Default([]) List<TimeSheet> timeSheet,
+    @Default(false) bool isPlaying,
   }) = _CurrentTimeSheet;
 }
 

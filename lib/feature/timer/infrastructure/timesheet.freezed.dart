@@ -18,7 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CurrentTimeSheet {
   Timer? get timer => throw _privateConstructorUsedError;
   Duration get duration => throw _privateConstructorUsedError;
-  List<TimeSheet> get timeSheet => throw _privateConstructorUsedError;
+  bool get isPlaying => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CurrentTimeSheetCopyWith<CurrentTimeSheet> get copyWith =>
@@ -31,7 +31,7 @@ abstract class $CurrentTimeSheetCopyWith<$Res> {
           CurrentTimeSheet value, $Res Function(CurrentTimeSheet) then) =
       _$CurrentTimeSheetCopyWithImpl<$Res, CurrentTimeSheet>;
   @useResult
-  $Res call({Timer? timer, Duration duration, List<TimeSheet> timeSheet});
+  $Res call({Timer? timer, Duration duration, bool isPlaying});
 }
 
 /// @nodoc
@@ -49,7 +49,7 @@ class _$CurrentTimeSheetCopyWithImpl<$Res, $Val extends CurrentTimeSheet>
   $Res call({
     Object? timer = freezed,
     Object? duration = null,
-    Object? timeSheet = null,
+    Object? isPlaying = null,
   }) {
     return _then(_value.copyWith(
       timer: freezed == timer
@@ -60,10 +60,10 @@ class _$CurrentTimeSheetCopyWithImpl<$Res, $Val extends CurrentTimeSheet>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration,
-      timeSheet: null == timeSheet
-          ? _value.timeSheet
-          : timeSheet // ignore: cast_nullable_to_non_nullable
-              as List<TimeSheet>,
+      isPlaying: null == isPlaying
+          ? _value.isPlaying
+          : isPlaying // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 }
@@ -76,7 +76,7 @@ abstract class _$$CurrentTimeSheetImplCopyWith<$Res>
       __$$CurrentTimeSheetImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({Timer? timer, Duration duration, List<TimeSheet> timeSheet});
+  $Res call({Timer? timer, Duration duration, bool isPlaying});
 }
 
 /// @nodoc
@@ -92,7 +92,7 @@ class __$$CurrentTimeSheetImplCopyWithImpl<$Res>
   $Res call({
     Object? timer = freezed,
     Object? duration = null,
-    Object? timeSheet = null,
+    Object? isPlaying = null,
   }) {
     return _then(_$CurrentTimeSheetImpl(
       timer: freezed == timer
@@ -103,10 +103,10 @@ class __$$CurrentTimeSheetImplCopyWithImpl<$Res>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration,
-      timeSheet: null == timeSheet
-          ? _value._timeSheet
-          : timeSheet // ignore: cast_nullable_to_non_nullable
-              as List<TimeSheet>,
+      isPlaying: null == isPlaying
+          ? _value.isPlaying
+          : isPlaying // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -117,26 +117,20 @@ class _$CurrentTimeSheetImpl implements _CurrentTimeSheet {
   const _$CurrentTimeSheetImpl(
       {this.timer,
       this.duration = const Duration(seconds: 0),
-      final List<TimeSheet> timeSheet = const []})
-      : _timeSheet = timeSheet;
+      this.isPlaying = false});
 
   @override
   final Timer? timer;
   @override
   @JsonKey()
   final Duration duration;
-  final List<TimeSheet> _timeSheet;
   @override
   @JsonKey()
-  List<TimeSheet> get timeSheet {
-    if (_timeSheet is EqualUnmodifiableListView) return _timeSheet;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_timeSheet);
-  }
+  final bool isPlaying;
 
   @override
   String toString() {
-    return 'CurrentTimeSheet(timer: $timer, duration: $duration, timeSheet: $timeSheet)';
+    return 'CurrentTimeSheet(timer: $timer, duration: $duration, isPlaying: $isPlaying)';
   }
 
   @override
@@ -147,13 +141,12 @@ class _$CurrentTimeSheetImpl implements _CurrentTimeSheet {
             (identical(other.timer, timer) || other.timer == timer) &&
             (identical(other.duration, duration) ||
                 other.duration == duration) &&
-            const DeepCollectionEquality()
-                .equals(other._timeSheet, _timeSheet));
+            (identical(other.isPlaying, isPlaying) ||
+                other.isPlaying == isPlaying));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, timer, duration,
-      const DeepCollectionEquality().hash(_timeSheet));
+  int get hashCode => Object.hash(runtimeType, timer, duration, isPlaying);
 
   @JsonKey(ignore: true)
   @override
@@ -167,14 +160,14 @@ abstract class _CurrentTimeSheet implements CurrentTimeSheet {
   const factory _CurrentTimeSheet(
       {final Timer? timer,
       final Duration duration,
-      final List<TimeSheet> timeSheet}) = _$CurrentTimeSheetImpl;
+      final bool isPlaying}) = _$CurrentTimeSheetImpl;
 
   @override
   Timer? get timer;
   @override
   Duration get duration;
   @override
-  List<TimeSheet> get timeSheet;
+  bool get isPlaying;
   @override
   @JsonKey(ignore: true)
   _$$CurrentTimeSheetImplCopyWith<_$CurrentTimeSheetImpl> get copyWith =>

@@ -13,6 +13,7 @@ class TimerCubit extends Cubit<CurrentTimeSheet> {
       (timer1) {
         final currentTimeSheets = state;
         final newTimeSheets = currentTimeSheets.copyWith(
+          isPlaying: true,
           duration: Duration(
             seconds: currentTimeSheets.duration.inSeconds + 1,
           ),
@@ -29,8 +30,8 @@ class TimerCubit extends Cubit<CurrentTimeSheet> {
     emit(const CurrentTimeSheet());
   }
 
-  void stopTimer() {
+  void pauseTimer() {
     state.timer?.cancel();
-    emit(state);
+    emit(state.copyWith(isPlaying: false));
   }
 }
