@@ -1,16 +1,31 @@
-# desktop_quest
 
-A new Flutter project.
+#Desktop App Quest
+This is a desktop app that takes screenshots of your screen.
+### Feature Implemented:
+1. Start, Stop and Pause Timer
+2. Recored headshot and screenshots of entire screen every 10 sec
+3. Display records
+4. Display Timer
 
-## Getting Started
+###### App Architecture and Folder Structure
+The code of the app implements clean architecture to separate the UI, domain and data layers with a features-first approach for folder structure.
+```
+lib
+├── core
+│   ├── extension
+├── features
+│   ├── timer
+│   │   ├── application
+│   │   │    ├── cubit
+│   │   ├── infrastructure
+│   │   │    ├── models
+│   │   │    ├── repository
+│   │   └── presentation
+│   │   │    ├── widgets (custom component)
+│   │   │    ├── screen.dart
+└── main.dart
+```
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/SaujanBindukar/desktop_quest/assets/34705432/99a61c1a-a61b-4625-9f81-ce87f8cf832e
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
