@@ -29,3 +29,11 @@ lib
 
 https://github.com/SaujanBindukar/desktop_quest/assets/34705432/99a61c1a-a61b-4625-9f81-ce87f8cf832e
 
+###### Screenshots
+<img width="908" alt="Screenshot 2024-06-13 at 11 47 54 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/a00b22b6-5b39-485b-ba18-d0878e7265cd">
+<img width="908" alt="Screenshot 2024-06-13 at 11 48 08 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/704793cf-928c-43c1-8346-6c5cc6e49a54">
+
+
+
+
+
