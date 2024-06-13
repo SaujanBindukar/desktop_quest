@@ -1,5 +1,5 @@
 
-#Desktop App Quest
+### Desktop App Quest
 This is a desktop app that takes screenshots of your screen.
 ### Feature Implemented:
 1. Start, Stop and Pause Timer
