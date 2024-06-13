@@ -27,7 +27,10 @@ class TimerCubit extends Cubit<CurrentTimeSheet> {
 
   void resetTimer() {
     state.timer?.cancel();
-    emit(const CurrentTimeSheet());
+    emit(state.copyWith(
+      duration: const Duration(seconds: 0),
+      isPlaying: false,
+    ));
   }
 
   void pauseTimer() {
