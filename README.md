@@ -1,16 +1,39 @@
-# desktop_quest
 
-A new Flutter project.
+### Desktop App Quest
+This is a desktop app that takes screenshots of your screen.
+### Feature Implemented:
+1. Start, Stop and Pause Timer
+2. Recored headshot and screenshots of entire screen every 10 sec
+3. Display records
+4. Display Timer
 
-## Getting Started
+###### App Architecture and Folder Structure
+The code of the app implements clean architecture to separate the UI, domain and data layers with a features-first approach for folder structure.
+```
+lib
+├── core
+│   ├── extension
+├── features
+│   ├── timer
+│   │   ├── application
+│   │   │    ├── cubit
+│   │   ├── infrastructure
+│   │   │    ├── models
+│   │   │    ├── repository
+│   │   └── presentation
+│   │   │    ├── widgets (custom component)
+│   │   │    ├── screen.dart
+└── main.dart
+```
 
-This project is a starting point for a Flutter application.
+###### Video Recording
+https://github.com/SaujanBindukar/desktop_quest/assets/34705432/99a61c1a-a61b-4625-9f81-ce87f8cf832e
 
-A few resources to get you started if this is your first Flutter project:
+###### Screenshots
+<img width="908" alt="Screenshot 2024-06-13 at 11 47 54 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/a00b22b6-5b39-485b-ba18-d0878e7265cd">
+<img width="908" alt="Screenshot 2024-06-13 at 11 48 08 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/704793cf-928c-43c1-8346-6c5cc6e49a54">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
