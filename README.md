@@ -26,12 +26,17 @@ lib
 └── main.dart
 ```
 
-###### Video Recording
-https://github.com/SaujanBindukar/desktop_quest/assets/34705432/99a61c1a-a61b-4625-9f81-ce87f8cf832e
+# Video Recording
 
-###### Screenshots
-<img width="908" alt="Screenshot 2024-06-13 at 11 47 54 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/a00b22b6-5b39-485b-ba18-d0878e7265cd">
-<img width="908" alt="Screenshot 2024-06-13 at 11 48 08 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/704793cf-928c-43c1-8346-6c5cc6e49a54">
+https://github.com/SaujanBindukar/desktop_quest/assets/34705432/f7ff668a-a1b2-4fc4-9276-4757f125076e
+
+
+
+
+# Screenshots
+<img width="908" alt="Screenshot 2024-06-24 at 3 25 07 PM" src="https://github.com/SaujanBindukar/desktop_quest/assets/34705432/f6595460-e79e-49da-b2e0-06076084a35e">
+
+
 
 
 
